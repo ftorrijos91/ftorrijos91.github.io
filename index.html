@@ -190,7 +190,7 @@
               background-color: #555;
             }
 
-            .content {
+            .cont {
               padding: 0 18px;
               display: none;
               overflow: hidden;
@@ -203,15 +203,15 @@
 						       <a class="btn btn-success btn-social mx-2 style="background-color:#a3e4d7" href="https://5da4-87-217-30-203.eu.ngrok.io/"><i class="icon-bolt"></i></a>
                     <p style="color:#543c2c">Instructions:</p>
                     <button type="button" class="collapsible" style="background-color:#543c2c">Personal characteristics</button>
-                    <div class="content">
+                    <div class="cont">
                       <p style="color:#543c2c">Profile characteristics can be changed by going to 'Perfil'. If changes are made to the 'Gastos | Ingresos' functionality, the user's money amount will change.</p>
                     </div>
                     <button type="button" class="collapsible" style="background-color:#543c2c">Applications menu</button>
-                    <div class="content">
+                    <div class="cont">
                       <p style="color:#543c2c">For the functionalities of the application, you have complete freedom of use. When creating items, folders will be generated with the year and within the items created by month. You can: create, edit, delete, view indexes and details.</p>
                     </div>
                     <button type="button" class="collapsible" style="background-color:#543c2c">Charts and statistics</button>
-                    <div class="content">
+                    <div class="cont">
                       <p style="color:#543c2c">When generating the charts, the available data must be taken into account. If no data is available, 'No hay datos' will appear. To know what data is available, you can see it in the indexes (folders with the year) of the functionalities.</p>
                </div>
             </div>
@@ -269,11 +269,11 @@
       for (i = 0; i < coll.length; i++) {
         coll[i].addEventListener("click", function() {
           this.classList.toggle("active");
-          var content = this.nextElementSibling;
-          if (content.style.display === "block") {
-            content.style.display = "none";
+          var cont = this.nextElementSibling;
+          if (cont.style.display === "block") {
+            cont.style.display = "none";
           } else {
-            content.style.display = "block";
+            cont.style.display = "block";
           }
         });
       }
